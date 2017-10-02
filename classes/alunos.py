@@ -36,7 +36,7 @@ class Aluno(object): #criando classe Aluno
 
 
     @classmethod
-    def from_mongo(cls,_id): #método buscador que retorna objeto da classe Aluno
+    def from_mongo(cls,_id): #método de busca que retorna objeto da classe Aluno
         dados_aluno = Database.find_one(collection='alunos',query={'_id':_id})
         return cls(nome=dados_aluno['nome'],
                    p1=dados_aluno['p1'],
