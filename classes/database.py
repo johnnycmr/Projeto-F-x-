@@ -21,7 +21,7 @@ class Database(object): #criando classe para banco de dados em mongodb
         return Database.DATABASE[collection].find(query)
 
     @staticmethod
-    def find_one(collection, query): #método para realizar querys
+    def find_one(collection, query):
         return Database.DATABASE[collection].find_one(query)
 
     def find_order(collection, query, ordem): #método para realizar querys ordenando os dados
