@@ -8,7 +8,7 @@ class Database(object): #criando classe para banco de dados em mongodb
     DATABASE = None
 
     @staticmethod
-    def initialize(): #método inicializados, seleciona a coleção F(x)
+    def initialize(): #método inicializador, seleciona a coleção F(x)
         client = pymongo.MongoClient(Database.URI)
         Database.DATABASE=client['F(x)']
 
