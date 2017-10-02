@@ -1,7 +1,7 @@
 '''Aplicativo principal em flask.
 O aplicativo aqui desenvolvido recebe o input da home page
-Com esse input ele calcular a média do aluno e redireciona para uma página com a situação do aluno (aprovado ou reprovado)
-Também é possível verificar a lista de alunos cadastrados no bando de dados em ordem alfabética'''
+Com esse input ele calcula a média do aluno e redireciona para uma página com a situação do aluno (aprovado ou reprovado)
+Também é possível verificar a lista de alunos cadastrados no banco de dados em ordem alfabética'''
 
 from flask import Flask, render_template, request
 from classes.database import Database
