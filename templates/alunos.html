@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container" align="center" style='top:2%;left:40%;width:320px;'>
+    <h4 style='top:3%;left:50%;width:250px;'>Alunos: </h4>
+    <hr>
+    {%for aluno in alunos %}
+    <h5 style='left:50%;width:250px;'><font color="blue">Nome:</font> {{ aluno.nome }}  <br><font color="blue">Matrícula:</font> {{ aluno._id }}</h5>
+    <hr>
+    {% endfor %}
+
+</div>
+{% endblock %}

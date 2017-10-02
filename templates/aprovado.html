@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container" align="center" style='position:fixed;top:5%;left:40%;width:320px;'>
+    <h3 style='top: 20%,left:50%;'>{{nome}} foi aprovado(a) com média <font color="blue">{{media}}</font></h3>
+    <hr>
+    <h4> Nota da primeira prova: {{p1}}</h4>
+    <hr>
+    <h4> Nota da segunda prova: {{p2}}</h4>
+    <hr>
+    <h4> Nota da terçeira prova: {{p3}}</h4>
+</div>
+{% endblock %}

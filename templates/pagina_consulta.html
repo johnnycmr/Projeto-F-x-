@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container" align="center">
+    <form id="formulario-consulta" action="/consulta" method="post" style='position:fixed;top:5%;left:40%;width:320px;'>
+        <div class="form-group">
+            <label for="matricula"><b>Número de Matrícula (7 dígitos)</b> </label>
+            <input type="text" id="matricula" class="form-control" name="matricula">
+        </div>
+
+        <button type="submit" class="btn btn-success">Consultar Média</button>
+    </form>
+
+    <form id="tabela_alunos" action="/alunos" method="get" style='position:fixed;top:20%;left:40%;width:320px;'>
+        <div class="alunos-group">
+            <label for="alunos"><b>Pressione para consultar alunos</b></label>
+        </div>
+
+        <button type="submit" id = "alunos" class="btn btn-info">Consultar Alunos</button>
+
+    </form>
+</div>
+{% endblock %}
